@@ -16,8 +16,23 @@ $(window).resize(function() {
 
 });
 
-$(document).ready(function() {   
+$(document).ready(function() {
 
+	var stepIndex;
+
+	$(".steps_wrapp .step").each(function() {
+
+		parentBlock = $(this).closest(".steps_wrapp");
+		stepIndex = $(this).index(".step");
+
+		if( $(this).hasClass("active") && stepIndex < parentBlock.find(".step").length) {
+
+			stepIndex = $(this).index(".step");
+			parentBlock.find(".line:eq("+stepIndex+")").addClass("active");
+
+		}
+
+	});
 
 });
 
