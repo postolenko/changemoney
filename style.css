@@ -896,11 +896,14 @@ textarea:focus {
 }
 
 .header-row_2 .left {
+    width: 50%;
     padding: 15px 1% 15px 0;
 }
 
 .header-row_2 .right {
-    padding: 15px 0 15px 1%;
+    width: 50%;
+    text-align: right;
+    padding: 15px 3% 15px 1%;
 }
 
 .logo {
@@ -1399,7 +1402,7 @@ textarea:focus {
     display: table-cell;
     vertical-align: middle;
     width: 100px;
-    padding: 16px 5px 19px 5px;
+    padding: 18px 5px 21px 5px;
     text-align: center;
     background-color: #ededed;
 }
@@ -1407,7 +1410,7 @@ textarea:focus {
 .news_article .col:nth-child(2) {
     display: table-cell;
     vertical-align: middle;
-    padding: 16px 10px 19px 10px;
+    padding: 18px 10px 21px 10px;
     background-color: #f2fdff;
 }
 
@@ -1820,6 +1823,10 @@ input.error {
     margin: 32px 0 14px 0;
 }
 
+.title_4 h2 {
+
+}
+
 .title_4 .h2-desc {
     padding: 0;
 }
@@ -1891,6 +1898,7 @@ input.error {
 }
 
 .title_5 h2 {
+
     font-size: 24px;
     line-height: 28px;
 }
@@ -1990,6 +1998,181 @@ input.error {
 }
 
 /*-- /Rules --*/
+
+/*-- News --*/
+
+.news_sect {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.news_sect h2 {
+    text-transform: uppercase;
+}
+
+.news_wrapp {
+    margin: 7px 0;
+}
+
+.news_wrapp .news_article {
+    display: inline-table;
+    width: 49%;
+}
+
+.news_wrapp .news_article:nth-child(odd) {
+    margin: 8px .5% 8px 0;
+}
+
+.news_wrapp .news_article:nth-child(even) {
+    margin: 8px 0 8px .5%;
+}
+
+.news_2 {
+    background-color: rgb(0, 207, 255);
+}
+
+.news_2 .col:nth-child(1) {
+    background-color: #ffffff;
+}
+
+.pagination_2 {
+    margin: 41px 0;
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.pagination_2 li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px;
+}
+
+.pagination_2 li a {
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background-color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background-color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background-color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.pagination_2 li a:link,
+.pagination_2 li a:visited {
+    background-color: rgb(255, 255, 255);
+}
+
+.pagination_2 li a.active,
+.pagination_2 li a:active {
+    background-color: rgb(0, 207, 255);
+}
+
+.pagination_2 li a:hover {
+    background-color: rgb(0, 207, 255);
+}
+
+/*-- /News --*/
+
+/*-- Questions --*/
+
+.dropdowns_sect {
+    margin-bottom: 67px;
+}
+
+.dropdowns_sect h2 {
+    text-transform: uppercase;
+    margin: 0 0 18px 25px;
+}
+
+.dropdown_wrapp {
+    margin: 10px 0;
+}
+
+.dropdown_title {
+    position: relative;
+    padding: 16px 60px 21px 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .35);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .35);
+}
+
+.dropdown_title:after {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 20px;
+    background-image: url(img/black_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.active .dropdown_title:after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.dropdown_title p {
+    font-weight: bold;
+}
+
+.dropdown_box {
+    padding: 20px 4%;
+}
+
+.dropdown_box p {
+
+}
+
+/*-- /Questions --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

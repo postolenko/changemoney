@@ -5,3 +5,5 @@
 # http://postolenko.github.io/changemoney/about.html
 # http://postolenko.github.io/changemoney/rules.html
 # http://postolenko.github.io/changemoney/return_policy.html
+# http://postolenko.github.io/changemoney/news.html
+# http://postolenko.github.io/changemoney/questions.html

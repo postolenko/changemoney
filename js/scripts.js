@@ -34,6 +34,68 @@ $(document).ready(function() {
 
 	});
 
+	// ---------------
+
+	$(".dropdown_wrapp").each( function() {
+
+		if( !$(this).hasClass("active") ) {
+
+	        $(this).find(".dropdown_box").css({
+	            "display" : "none"
+	        });
+
+		}
+
+    });
+
+
+    $(".dropdown_title").click(function(e) {
+
+        e.preventDefault();
+
+        parentBlock = $(this).closest(".dropdown_wrapp");
+
+        var dropdownBox = parentBlock.find(".dropdown_box");
+
+        if( dropdownBox.is(":hidden") ) {
+
+            dropdownBox.slideDown(300);
+            parentBlock.addClass("active");
+
+        } else {
+
+            dropdownBox.slideUp(300);
+            parentBlock.removeClass("active");
+
+        }
+
+    });
+
+    // $(document).mouseup(function (e){
+
+    //     hide_element = $('.dropdown_box');
+
+    //     if (!hide_element.is(e.target)
+
+    //         && hide_element.has(e.target).length === 0) {
+
+    //         parentBlock = hide_element.closest(".dropdown_wrapp");
+    //         hide_element.slideUp(300);
+    //         parentBlock.removeClass("active");
+    //     }
+
+    // });
+
+    // $(this).keydown(function(eventObject){
+
+    //     if (eventObject.which == 27) {
+
+    //         $('.dropdown_box').slideUp(300);
+
+    //     }
+
+    // });
+
 });
 
 function getFooterPosition() {
