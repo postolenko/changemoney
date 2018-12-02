@@ -741,7 +741,8 @@ textarea:focus {
 }
 
 .main-nav {
-    margin: 0 -10px;
+    /*margin: 0 -10px;*/
+    margin-left: 8px;
 }
 
 .main-nav li {
@@ -897,7 +898,7 @@ textarea:focus {
 
 .header-row_2 .left {
     width: 50%;
-    padding: 15px 1% 15px 0;
+    padding: 15px 1% 15px 26px;
 }
 
 .header-row_2 .right {
@@ -2101,7 +2102,7 @@ input.error {
 
 .dropdowns_sect h2 {
     text-transform: uppercase;
-    margin: 0 0 18px 25px;
+    margin: 0 0 18px 26px;
 }
 
 .dropdown_wrapp {
