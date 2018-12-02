@@ -2102,7 +2102,7 @@ input.error {
 
 .dropdowns_sect h2 {
     text-transform: uppercase;
-    margin: 0 0 18px 26px;
+    margin: 0 0 18px 25px;
 }
 
 .dropdown_wrapp {
@@ -2111,7 +2111,7 @@ input.error {
 
 .dropdown_title {
     position: relative;
-    padding: 16px 60px 21px 25px;
+    padding: 16px 60px 21px 26px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
