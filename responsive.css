@@ -374,6 +374,10 @@
 		line-height: 18px;
 	}
 
+	.title_7 {
+	    margin: 3px 0 16px 0;
+	}
+
 	/*-- /Content --*/
 
 	/*-- Footer --*/
@@ -410,10 +414,6 @@
 
 	.news_wrapp .news_article {
 	    width: 100%;
-	}
-
-	.title_7 {
-	    margin: 3px 0 16px 0;
 	}
 
 }
