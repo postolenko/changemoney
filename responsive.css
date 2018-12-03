@@ -249,6 +249,12 @@
 
 	/*-- Content --*/
 
+	.title_wrapp {
+	    min-height: auto;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+
 	.sistem_chose {
 	    display: table;
 	}
