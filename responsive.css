@@ -270,7 +270,7 @@
 		display: none;
 		width: 100%;
 		height: 100vh;
-		padding: 0;
+		padding: 0 0 50px 0;
 		background-color: #ffffff;
 		position: fixed;
 		top: 0;
@@ -354,7 +354,7 @@
 	}
 
 	.dropdown_title p {
-	    font-size: 12px;
+	    font-size: 14px;
 	    line-height: 18px;
 	}
 
@@ -363,7 +363,7 @@
 	}
 
 	.dropdown_box p {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 18px;
 	}
 
@@ -494,6 +494,14 @@
 
 	.content_inner > .clearfix > .right {
 	    padding: 25px 15px;
+	}
+
+	.dropdown_title p {
+	    font-size: 13px;
+	}
+
+	.dropdown_box p {
+		font-size: 13px;
 	}
 
 	/*-- Footer --*/
