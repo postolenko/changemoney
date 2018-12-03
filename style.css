@@ -4,7 +4,29 @@
 /*-- Fonts --*/
 /*------------------*/
 
+@font-face {
+    font-family: "Verdana";
+    src: url("fonts/Verdana.eot");
+    src: url("fonts/Verdana.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Verdana.woff2") format("woff2"),
+        url("fonts/Verdana.woff") format("woff"),
+        url("fonts/Verdana.ttf") format("truetype"),
+        url("fonts/Verdana.svg#Verdana") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: "Verdana";
+    src: url("fonts/Verdana-Bold.eot");
+    src: url("fonts/Verdana-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Verdana-Bold.woff2") format("woff2"),
+        url("fonts/Verdana-Bold.woff") format("woff"),
+        url("fonts/Verdana-Bold.ttf") format("truetype"),
+        url("fonts/Verdana-Bold.svg#fonts/Verdana-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
