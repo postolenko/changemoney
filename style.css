@@ -1094,9 +1094,7 @@ textarea:focus {
     display: none;
     vertical-align: top;
     width: 46px;
-    /*height: 40px;*/
     height: 46px;
-    /*height: 100%;*/
     padding: 5px 0;
     background-color: #ededed;
     text-align: center;
@@ -1108,6 +1106,8 @@ textarea:focus {
 .logo-resp img {
     display: inline-block;
     vertical-align: top;
+    max-width: 100%;
+    max-height: 100%;
     margin-right: 3px;
     position: relative;
     top: 50%;
@@ -1117,7 +1117,6 @@ textarea:focus {
 }
 
 .header-row_1 .white_pill_resp {
-    /*display: inline-block;*/
     display: none;
     vertical-align: top;
     margin: 10px 2%;
