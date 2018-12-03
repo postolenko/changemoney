@@ -11,9 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">	
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-<!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+	<title>Money Bar</title>
 
 </head>
 
@@ -27,9 +26,9 @@
 
 		<div class="header-row_1">
 			<div class="row clearfix">
-				<div class="left">
-					<div class="main-nav_wrapp">
-						<ul class="main-nav scroll">							
+				<div class="left">					
+					<div class="main-nav_wrapp main_nav_resp">
+						<ul class="main-nav" id="main_nav">							
 							<li><a href="#" class="active">Главная</a></li>
 							<li><a href="#">О нас</a></li>
 							<li><a href="#">Правила пользования</a></li>
@@ -42,8 +41,12 @@
 						<span></span>
 						<span></span>
 					</button>
+					<a href="#" class="logo-resp">
+						<img src="img/logo_resp.svg" alt="" />
+					</a>
 				</div>
 				<div class="right">
+					<button type="button" class="white_pill_resp"><i class="user"></i>написать оператору</button>
 					<ul class="lang_list">
 						<li>
 							<a href="#" class="active">
@@ -88,247 +91,293 @@
 									<div class="title_wrapp">
 										<h2>Отдаете</h2>
 									</div>
-									<ul class="sistems_list">
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/qiwi.png" alt="" />
+									<div class="sistem_select">
+										<div class="sistem_chose">
+											<div class="col-1">
+												<img src="img/qiwi.png" alt="" />
+											</div>
+											<div class="col-2">
+												<p>Qiwi</p>
+											</div>
+										</div>
+										<div class="sistems_list_wrapp">
+											<div class="close_btn_wrapp">
+												<div class="col">
+													<h3>Отдаете</h3>
 												</div>
-												<div class="col-2">
-													<p>Qiwi</p>
+												<div class="col">
+													<button class="close_btn">	
+														<span></span>
+														<span></span>
+													</button>
 												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="active">
-												<div class="col-1">
-													<img src="img/abank.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Альфа-Клик RUB</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/bitcoin_1.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Bitcoin</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/bitcoin_2.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Bitcoin Cash</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/doge.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Dogecoin DOGE</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/eth.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Ethereum ETH</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/litecoin.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Litecoin LTC</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/perfectmoney.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>PerfectMoney USD</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/privat24.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Приват24 UAH</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/ripple.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Ripple</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/yandexmoney.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Яндекс.Деньги</p>
-												</div>
-											</a>
-										</li>
-									</ul>
+											</div>
+											<ul class="sistems_list">
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/qiwi.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Qiwi</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="active">
+														<div class="col-1">
+															<img src="img/abank.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Альфа-Клик RUB</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/bitcoin_1.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Bitcoin</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/bitcoin_2.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Bitcoin Cash</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/doge.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Dogecoin DOGE</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/eth.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Ethereum ETH</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/litecoin.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Litecoin LTC</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/perfectmoney.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>PerfectMoney USD</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/privat24.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Приват24 UAH</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/ripple.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Ripple</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/yandexmoney.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Яндекс.Деньги</p>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 								<div class="right">
 									<div class="title_wrapp">
 										<h2>Получаете</h2>
 										<a href="#" class="blue_link">показать резервы</a>
 									</div>
-									<ul class="sistems_list sistems_list_2">
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/qiwi.png" alt="" />
+									<div class="sistem_select">
+										<div class="sistem_chose">
+											<div class="col-1">
+												<img src="img/qiwi.png" alt="" />
+											</div>
+											<div class="col-2">
+												<p>Qiwi</p>
+											</div>
+										</div>
+										<div class="sistems_list_wrapp">
+											<div class="close_btn_wrapp">
+												<div class="col">
+													<h3>Получаете</h3>
 												</div>
-												<div class="col-2">
-													<p>Qiwi</p>
-													<p class="p-2">288.354209</p>
+												<div class="col">
+													<button class="close_btn">	
+														<span></span>
+														<span></span>
+													</button>
 												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/abank.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Альфа-Клик RUB</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/bitcoin_1.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Bitcoin</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="active">
-												<div class="col-1">
-													<img src="img/bitcoin_2.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Bitcoin Cash</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/bank.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Банк. карты RUB</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/prom.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Промсвязьбанк RUB</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/russtandart.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Русский Стандарт RUB</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/sber.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Сбербанк RUB</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/tinkof.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Тинькофф RUB</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/vtb24.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>ВТБ24 RUB</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="col-1">
-													<img src="img/yandexmoney.png" alt="" />
-												</div>
-												<div class="col-2">
-													<p>Яндекс.Деньги</p>
-													<p class="p-2">288.354209</p>
-												</div>
-											</a>
-										</li>
-									</ul>
+											</div>
+											<ul class="sistems_list sistems_list_2">
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/qiwi.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Qiwi</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/abank.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Альфа-Клик RUB</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/bitcoin_1.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Bitcoin</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/bitcoin_2.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Bitcoin Cash</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/bank.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Банк. карты RUB</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="active">
+														<div class="col-1">
+															<img src="img/prom.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Промсвязьбанк RUB</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/russtandart.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Русский Стандарт RUB</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/sber.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Сбербанк RUB</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/tinkof.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Тинькофф RUB</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/vtb24.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>ВТБ24 RUB</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="col-1">
+															<img src="img/yandexmoney.png" alt="" />
+														</div>
+														<div class="col-2">
+															<p>Яндекс.Деньги</p>
+															<p class="p-2">288.354209</p>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -648,7 +697,6 @@
 	<script src="vendors/js/jquery.js"></script>
 	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/smoothscroll.js"></script>
-	<script src="vendors/js/select2.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/additional_scripts.js"></script>
 
