@@ -4,6 +4,11 @@ e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+var sistemsList;
+var sistemChose;
+var sistemsListWrapp;
+var appendTempl;
+
 $(window).load(function() {
 
 	getFooterPosition();
@@ -73,31 +78,6 @@ $(document).ready(function() {
 
     });
 
-    // $(document).mouseup(function (e){
-
-    //     hide_element = $('.dropdown_box');
-
-    //     if (!hide_element.is(e.target)
-
-    //         && hide_element.has(e.target).length === 0) {
-
-    //         parentBlock = hide_element.closest(".dropdown_wrapp");
-    //         hide_element.slideUp(300);
-    //         parentBlock.removeClass("active");
-    //     }
-
-    // });
-
-    // $(this).keydown(function(eventObject){
-
-    //     if (eventObject.which == 27) {
-
-    //         $('.dropdown_box').slideUp(300);
-
-    //     }
-
-    // });
-
     // -----------------------
 
     $(".respmenubtn").click(function() {
@@ -135,8 +115,8 @@ $(document).ready(function() {
 
     $(".sistem_select").each(function() {
 
-    	var sistemsList = $(this).find(".sistems_list");
-    	var sistemChose = $(this).find(".sistem_chose");
+    	sistemsList = $(this).find(".sistems_list");
+    	sistemChose = $(this).find(".sistem_chose");
 
     	sistemsList.find("a").each(function() {
 
@@ -167,10 +147,12 @@ $(document).ready(function() {
     	if( bodyWidth <= 768 ) {
 
 	    	e.preventDefault();
+	    	$(this).closest(".sistems_list").find("li a").removeClass("active");
+	    	$(this).addClass("active");
 	    	parentBlock = $(this).closest(".sistem_select");
-	    	var sistemsListWrapp = $(this).closest(".sistem_select").find(".sistems_list_wrapp");
-	    	var sistemChose = parentBlock.find(".sistem_chose");
-	    	var appendTempl = $(this).html();
+	    	sistemsListWrapp = $(this).closest(".sistem_select").find(".sistems_list_wrapp");
+	    	sistemChose = parentBlock.find(".sistem_chose");
+	    	appendTempl = $(this).html();
 	    	sistemChose.html(appendTempl);
 			sistemsListWrapp.fadeOut(300);
 
@@ -182,7 +164,7 @@ $(document).ready(function() {
 
     	e.preventDefault();
 
-    	var sistemsListWrapp = $(this).closest(".sistem_select").find(".sistems_list_wrapp");
+    	sistemsListWrapp = $(this).closest(".sistem_select").find(".sistems_list_wrapp");
     	if( sistemsListWrapp.is(":hidden") ) {
     		sistemsListWrapp.fadeIn(300);
     	} else {
@@ -204,7 +186,7 @@ $(document).ready(function() {
 
     	if( bodyWidth <= 768 ) {
 
-	    	var sistemsListWrapp = $(".sistems_list_wrapp");
+	    	sistemsListWrapp = $(".sistems_list_wrapp");
 
 	        if (eventObject.which == 27 &&
 	            sistemsListWrapp.is(":visible") ) {

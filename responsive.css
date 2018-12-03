@@ -171,10 +171,8 @@
 	}
 
 	.header-row_1 .left {
-	    /*width: 31%;*/
 	    width: 110px;
 	    padding-right: 46px;
-	    /*text-align: right;*/
 	    position: relative;
 	}
 
@@ -653,12 +651,6 @@
 	    margin: 3px 0 8px 0;
 	}
 	
-}
-
-@media only screen and (max-width: 320px) {
-
-	
-
 }
 
 @media only screen and (min-width: 769px) {

@@ -24,7 +24,6 @@ html {
     line-height: 21px;
 }
 
-
 html,
 body {
     min-height: 100%;
@@ -155,20 +154,6 @@ textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s e
 textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
 textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
 
-.animation-delay-onload {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.animation-delay {
-    -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
-    -o-animation-delay: .3s;
-    animation-delay: .3s;
-}
-
 /*-------------------------------------------*/
 /* ----- DEFAULT STYLES ------ */
 /*-------------------------------------------*/
@@ -267,22 +252,6 @@ a:hover,
 a:active {
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-tap-highlight-color: transparent;
-}
-
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
 }
 
 input {
@@ -562,7 +531,6 @@ textarea.error {
     min-width: 288px;
     cursor: pointer;
     border-width: 1px;
-    /*margin: 10px 0;*/
     margin: 28px 0;
     padding: 11px 17px;
     border-color: #00cfff;
@@ -651,7 +619,6 @@ textarea.error {
     cursor: pointer;
     border-width: 1px;
     margin: 10px 0;
-    /*margin: 28px 0;*/
     padding: 11px 17px;
     border-color: #ffb600;
     border-style: solid;
@@ -714,7 +681,6 @@ textarea.error {
 
 .blue_link {
     display: inline;
-/*    vertical-align: top;*/
     font-size: 14px;
     line-height: 14px;
     color: #00cfff;
@@ -756,10 +722,9 @@ textarea.error {
 
 .black_link {
     display: inline;
-    /*vertical-align: top;*/
     font-size: 16px;
     line-height: 16px;
-    /*color: #333333;*/
+    color: #333333;
     border-bottom: 1px solid #333333;
     -webkit-transition-property: border-bottom;
     -webkit-transition-duration: .3s;
@@ -835,8 +800,6 @@ textarea.error {
 
 /*-- /Icons --*/
 
-
-
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -846,18 +809,11 @@ textarea.error {
 }
 
 .header-row_1 .left {
-    /*outline: 1px solid red;*/
     width: 89%;
 }
 
 .header-row_1 .right {
-    /*outline: 1px solid red;*/
     width: 11%;
-}
-
-.main-nav {
-    /*margin: 0 -10px;*/
-    /*margin-left: 8px;*/
 }
 
 .main-nav li {
@@ -949,7 +905,6 @@ textarea.error {
 }
 
 .main-nav li a:hover:after {
-    /*background-color: #ffb600;*/
     background-color: transparent;
 }
 
@@ -1183,15 +1138,6 @@ textarea.error {
     position: relative;
 }
 
-/*.content_inner > .left {
-    width: 47%;
-}
-
-.content_inner > .right {
-    width: 53%;
-    padding: 38px 3.5% 10px 2.3%;
-}*/
-
 .content_inner > .clearfix > .left {
     width: 47%;
 }
@@ -1226,7 +1172,6 @@ textarea.error {
 
 .sistems_wrapp {
     border-top: 2px solid #ededed;
-    /*border-bottom: 2px solid #ededed;*/
     position: relative;
 }
 
@@ -1286,7 +1231,6 @@ textarea.error {
 
 .close_btn span {
     display: block;
-    /*width: 27px;*/
     width: 39px;
     position: relative;
     top: -1px;
@@ -1339,12 +1283,6 @@ textarea.error {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-}
-
-.sistem_select {
-/*    display: table;
-    width: 100%;
-    min-height: 70px;*/
 }
 
 .sistem_chose {
@@ -1401,14 +1339,6 @@ textarea.error {
     display: none;
 }
 
-.sistems_list {
-    
-}
-
-.sistems_list li {
-
-}
-
 .sistems_list li a {
     display: table;
     width: 100%;
@@ -1460,7 +1390,6 @@ textarea.error {
 .sistems_list li a .col-2 {
     display: table-cell;
     vertical-align: top;
-    /*padding: 22px 5px 0 0;*/
     padding: 22px 40px 5px 0;
     background-repeat: no-repeat;
     background-position: right center;
