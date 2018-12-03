@@ -270,7 +270,7 @@
 		display: none;
 		width: 100%;
 		height: 100vh;
-		padding: 0 0 50px 0;
+		padding: 0;
 		background-color: #ffffff;
 		position: fixed;
 		top: 0;
@@ -291,6 +291,7 @@
 
 	.sistems_list {
 		height: calc( 100vh - 100px );
+		padding-bottom: 40px;
 	}
 
 	.ttile_2 {
