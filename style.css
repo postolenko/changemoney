@@ -285,6 +285,54 @@ textarea:focus {
 
 }
 
+input {
+    display: block;
+    width: 100%;
+    height: 33px;
+    padding: 0 10px;
+    border-width: 1px;
+    border-color: rgb(169, 169, 169);
+    border-style: solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);    
+    font-size: 14px;
+    line-height: 32px;
+}
+
+input:focus {
+    border-color: #ffb600;
+}
+
+input.error {
+    border-color: #fac6c6;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 6px 10px;
+    border-width: 1px;
+    border-color: rgb(169, 169, 169);
+    border-style: solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 19px;
+}
+
+textarea:focus {
+    border-color: #ffb600;
+}
+
+textarea.error {
+    border-color: #fac6c6;
+}
+
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -1683,10 +1731,6 @@ textarea:focus {
     margin: 19px 0;
 }
 
-.lastchanges_wrapp h3 {
-
-}
-
 .lastchanges {
     margin: 18px 0;
 }
@@ -1694,7 +1738,6 @@ textarea:focus {
 .lastchanges .thumb {
     display: inline-block;
     vertical-align: top;
-    /*width: 48%;*/
     width: 49%;
     padding: 2px 13px 3px 19px;
     overflow: hidden;
@@ -1922,7 +1965,6 @@ textarea:focus {
 .form_row {
     display: table;
     width: 100%;
-    /*margin: 12px 0;*/
     margin: 16px 0;
 }
 
@@ -1945,26 +1987,6 @@ textarea:focus {
     line-height: 20px;
 }
 
-input {
-    display: block;
-    width: 100%;
-    padding: 0 10px;
-    border-width: 1px;
-    border-color: rgb(169, 169, 169);
-    border-style: solid;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    height: 33px;
-    font-size: 14px;
-    line-height: 32px;
-}
-
-input.error {
-    border-color: #fac6c6;
-}
-
 .input_wrapp_2 {
     display: table;
     width: 100%;
@@ -1973,7 +1995,6 @@ input.error {
 .input_wrapp_2 .col-1 {
     display: table-cell;
     vertical-align: middle;
-    /*width: 143px;*/
     width: 135px;
 }
 
@@ -2054,7 +2075,6 @@ input.error {
 }
 
 .form_footer {
-    /*padding: 15px 0;*/
     padding: 15px 0 15px 6.5%;
 }
 
@@ -2072,20 +2092,12 @@ input.error {
 
 /*-- Step 2 - Page --*/
 
-.step-article {
-
-}
-
 .step-article p {
     padding: 9px 0;
 }
 
 .title_4 {
     margin: 32px 0 14px 0;
-}
-
-.title_4 h2 {
-
 }
 
 .title_4 .h2-desc {
@@ -2431,19 +2443,11 @@ input.error {
     padding: 20px 4%;
 }
 
-.dropdown_box p {
-
-}
-
 /*-- /Questions --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
-
-.footer {
-
-}
 
 .footer-row_1 {
     background-color: #000000;
